@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579768705434.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "260331462",
+    "id" : "35AAA916",
+    "lastKnownWriteTime" : 1599467134,
+    "last_content_update" : 1599467134198,
+    "path" : "~/Desktop/projects/new landscape/R/plot_signature_genes_new.R",
+    "project_path" : "plot_signature_genes_new.R",
+    "properties" : {
+        "cursorPosition" : "245,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

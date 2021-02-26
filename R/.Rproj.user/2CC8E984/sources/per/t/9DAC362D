@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1614025818848.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "598464410",
+    "id" : "9DAC362D",
+    "lastKnownWriteTime" : 1614027842,
+    "last_content_update" : 1614027842302,
+    "path" : "~/Desktop/projects/new landscape/R/plot_selected.R",
+    "project_path" : "plot_selected.R",
+    "properties" : {
+        "cursorPosition" : "165,78",
+        "scrollLine" : "136",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

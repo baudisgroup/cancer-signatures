@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1591262236640.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2860000189",
+    "id" : "8D22682",
+    "lastKnownWriteTime" : 1592209821,
+    "last_content_update" : 1592209821672,
+    "path" : "~/Desktop/projects/new landscape/R/plot_all_genes_on_chrom.R",
+    "project_path" : "plot_all_genes_on_chrom.R",
+    "properties" : {
+        "cursorPosition" : "116,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

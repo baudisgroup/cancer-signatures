@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576747920545.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2604186133",
+    "id" : "80E37ED1",
+    "lastKnownWriteTime" : 1579615422,
+    "last_content_update" : 1579615422246,
+    "path" : "~/Desktop/projects/new landscape/R/plot_disease.R",
+    "project_path" : "plot_disease.R",
+    "properties" : {
+        "cursorPosition" : "68,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
