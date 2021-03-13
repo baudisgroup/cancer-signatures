@@ -25,7 +25,7 @@ start = time.time()
 
 early_stopping_monitor = keras.callbacks.EarlyStopping(monitor='loss', patience=20, verbose=1)
 
-pklfile = '/Users/bogao/DataFiles/new landscape/data/band2gene_selected_gene_mat_array.pkl'
+pklfile = '../../data/band2gene_selected_gene_mat_array.pkl'
 # pklfile = '/Users/bogao/DataFiles/new landscape/data/selected_gene_mat.pkl'
 with open(pklfile, 'rb') as fi:
     data = pickle.load(fi)
@@ -71,9 +71,9 @@ core_list = [2000]
 for core_size in core_list:
     dae, dae_encoder, dae_his = denoisingAutoencoder(data[:,:2000], hidden_size=core_size)
     
-    model_path = '/Users/bogao/DataFiles/new landscape/models/new_pipeline_dae_genes_model_{}.mdl'.format(core_size)
-    encoder_path = '/Users/bogao/DataFiles/new landscape/models/new_pipeline_dae_genes_encoder_{}.mdl'.format(core_size)
-    his_path = '/Users/bogao/DataFiles/new landscape/models/new_pipline_dae_history_{}.pkl'.format(core_size)
+    model_path = '../../data/new_pipeline_dae_genes_model_{}.mdl'.format(core_size)
+    encoder_path = '../../data/new_pipeline_dae_genes_encoder_{}.mdl'.format(core_size)
+    his_path = '../../data/new_pipline_dae_history_{}.pkl'.format(core_size)
     
     dae.save(model_path)
     dae_encoder.save(encoder_path)

@@ -15,13 +15,13 @@ import matplotlib.pyplot as plt
 
 class CancerType:
 
-    matfile = '/Users/bogao/DataFiles/new landscape/data/reduced_gene_mat.pkl'
-    labelfile = '/Users/bogao/DataFiles/new landscape/data/all_bands_label.pkl'
-    dlabelfile = '/Users/bogao/DataFiles/new landscape/data/all_bands_disease_label.pkl'
-    censusfile = '/Users/bogao/DataFiles/new landscape/files/Census_allThu Jan 16 08_07_54 2020.tsv'
-    ampgenesfile = '/Users/bogao/DataFiles/Data/genome/reduced_high_amp_genes.tsv'
-    delgenesfile = '/Users/bogao/DataFiles/Data/genome/reduced_high_del_genes.tsv'
-    outputpath = '/Users/bogao/DataFiles/new landscape/files/new/'
+    matfile = '../../data/reduced_gene_mat.pkl'
+    labelfile = '../../data/all_bands_label.pkl'
+    dlabelfile = '../../data/all_bands_disease_label.pkl'
+    censusfile = '../../data/Census_allThu Jan 16 08_07_54 2020.tsv'
+    ampgenesfile = '../../data/reduced_high_amp_genes.tsv'
+    delgenesfile = '../../data/reduced_high_del_genes.tsv'
+    outputpath = '../../data/new/'
 
     num_amp_genes = 750
 
@@ -31,34 +31,7 @@ class CancerType:
             labels = pickle.load(flab)
             disease_labels = pickle.load(fdl)
             census_genes = pd.read_csv(censusfile, sep='\t')
-            # census_genes['chr'], census_genes['range'] = census_genes['Genome Location'].str.split(pat=':').str
-            # census_genes['start'], census_genes['end'] = census_genes['range'].str.split(pat='-').str
-            # # census_genes['start'] = census_genes['start'].astype('int')
-            # # census_genes['end'] = census_genes['end'].astype('int')
-            # census_genes.drop('range', axis=1, inplace=True)
 
-
-    # Old methods, seperate prepare function, trim disease code
-    # def __init__(self, cancer_type):
-    #     self.type = cancer_type
-    #     self.subtypes = {}
-
-    # def prepareData(self, trim=3, min_samples=10):
-        
-    #     # data of a cancer type
-    #     self.data = CancerType.data[CancerType.labels == self.type]
-
-    #     # labels of a cancer type
-    #     self.labels = CancerType.disease_labels[CancerType.labels == self.type]
-    #     self.labels = pd.Series(self.labels).str[:trim].values
-
-    #     # count samples in lablels(subtypes) 
-    #     unique_labels, unique_counts = np.unique(self.labels,return_counts=True)
-    #     unique_labels = unique_labels[unique_counts>min_samples]
-
-    #     # remove lablels that have too few samples
-    #     self.data = self.data[np.isin(self.labels, unique_labels)]
-    #     self.labels = self.labels[np.isin(self.labels, unique_labels)]
 
     def __init__(self, cancer_type, min_samples=10):
         self.type = cancer_type
@@ -179,25 +152,7 @@ class CancerType:
 
     # thresh_values = [amp_high, amp_low, del_high, del_low]
     def analyze(self, thresh_values):
-        # self.amp_genes = self.amp_genes[self.amp_genes['cnv']>thresh_values[1]].sort_values('band')
-        # self.del_genes = self.del_genes[self.del_genes['cnv']<thresh_values[3]].sort_values('band')
-        # self.genes = self.amp_genes['symbol'].dropna().tolist() + self.del_genes['symbol'].dropna().tolist()
 
-        # self.high_amp_genes = self.amp_genes[self.amp_genes['cnv']>=thresh_values[0]]
-        # self.low_amp_genes = self.amp_genes[self.amp_genes['cnv']<thresh_values[0]]
-
-        # self.high_del_genes = self.del_genes[self.del_genes['cnv']<=thresh_values[2]]
-        # self.low_del_genes = self.del_genes[self.del_genes['cnv']>thresh_values[2]]
-
-        # self.high_amp_census = self.censusOverlap(self.high_amp_genes)
-        # self.low_amp_census = self.censusOverlap(self.low_amp_genes)
-        # self.amp_census = self.censusOverlap(self.amp_genes)
-
-        # self.high_del_census = self.censusOverlap(self.high_del_genes)
-        # self.low_del_census = self.censusOverlap(self.low_del_genes)
-        # self.del_census = self.censusOverlap(self.del_genes)
-
-        # self.census = self.amp_census['Gene Symbol'].dropna().tolist() + self.del_census['Gene Symbol'].dropna().tolist()
 
         res = self.significantGenes(self.amp_genes, self.del_genes, thresh_values)
         self.amp_genes = res['amp_genes']
