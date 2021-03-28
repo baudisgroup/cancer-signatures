@@ -1,0 +1,14 @@
+innvestigate==1.0.9
+Keras==2.3.1
+matplotlib==3.3.2
+mecan4cna==0.28
+natsort==7.1.1
+numpy==1.19.2
+pandas==0.25.3
+pymongo==3.9.0
+scikit-learn==0.22.1
+scipy==1.4.1
+seaborn==0.11.1
+segment-liftover==0.955
+smote-variants==0.3.13
+tensorflow==2.0.0

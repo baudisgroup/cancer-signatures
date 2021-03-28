@@ -3,10 +3,10 @@ import pandas as pd
 
 # import smote_variants as sv
 
-# from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn import metrics
 from sklearn import utils
-# from sklearn.model_selection import StratifiedShuffleSplit
+from sklearn.model_selection import StratifiedShuffleSplit
 
 import matplotlib.pyplot as plt
 import seaborn as sns
