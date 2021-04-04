@@ -14,10 +14,10 @@ The open-access data from Progenetix and TCGA, and restricted data from PCAWG we
 
 ```
 alt-pipeline/			Scripts to generate .pkl files from the provided sample data at Progenetix.
-classification/		Scripts of the classification experiments.
-data/					The external & generated data used during the study.
+classification/			Scripts of the classification experiments.
+data/				The external & generated data used during the study.
 integration/			Scripts to process the original data from Progenetix, TCGA, and PCAWG.
-plots/					Scritps of all figures.
+plots/				Scritps of all figures.
 signatures/			Scripts for feature & signature generation using Autoencoder and LRP
 ```
 
